@@ -1,0 +1,26 @@
+const form = document.getElementsByTagName("form")[0]
+const alertDiv = document.getElementById("alert")
+
+form.addEventListener("submit", async(e) => {
+    const full_name = form.getElementsByTagName("input")[0].value
+    const matric_number = form.getElementsByTagName("input")[1].value
+    const department = form.getElementsByTagName("input")[2].value
+    const level = form.getElementsByTagName("input")[3].value
+    e.preventDefault()
+    try{
+        const res = await fetch("api/register", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({full_name, matric_number, department, level})
+        })
+        const data = await res.json()
+
+        // alertDiv.innerHTML(data.message)
+        alert(data.message)
+    }catch(err){
+        // alertDiv.innerHTML(err)
+        alert(err)
+    }
+})
