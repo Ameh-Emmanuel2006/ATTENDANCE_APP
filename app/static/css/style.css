@@ -1,0 +1,141 @@
+.index-page{
+    background-image: url(../img/og.jpg);
+    background-image: fill to page ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid;
+}
+
+.reg-page{
+    background-image:url(../img/pum.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+
+}
+
+.form{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    border: 2px green;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 4px;
+    background-color:rgba(0, 0, 0, 0);
+
+}
+
+.form input:not(:last-child){
+    border: 1px;
+    height: 30px;
+    border-radius: 4px;
+    padding: .2rem;
+    outline: none;
+    
+}
+
+.form input:not(:last-child):focus{
+    border: 1px green;
+    outline: 1px green;
+}
+
+.form input:last-child{
+    border: none;
+    background-color: green;
+    padding: .5rem;
+    cursor: pointer;
+    color: aliceblue;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 250ms ease-in;
+}
+
+.form input:last-child:focus{
+    scale: .99;
+}
+
+.form input:last-child:hover{
+    background-color: gray;
+}
+
+.StudentSignin {
+    width: 120px;
+    align-self: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.logo {
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+
+.login-note {
+    position: absolute;
+    left: 1000px;
+    top: 42px;
+    width: 350px;
+    height: 26px;
+    color: #000000;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: left;
+    vertical-align: top;
+}
+
+.login-note:hover{
+    color: gray;
+
+}
+
+.table {
+    width: 100%;
+    background-color: white;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+.CheckBox {
+    background-color: green;
+}
+
+.search {
+    align-self: centre;
+    top: 25px;
+    height: 30px;
+    width: 400px;
+    border-radius: 40px;
+    border: none;
+    flex: content;
+    flex-direction: column;
+    left: 800px;
+}
+
+
+header{
+    color: black;
+}
