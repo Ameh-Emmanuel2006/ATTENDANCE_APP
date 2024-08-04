@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="html" href="student.html">
+    <title>100LVL CIS CLASS RECORD</title>
+</head>
+<body class="reg-page">
+    <h1>100LVL CIS CLASS ATTENDANCE</h1>
+
+    <nav><input type="text" class="search" placeholder="search..."></nav>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Matric.No</th>
+            <th>Department</th>
+            <th>Level</th>
+            <th><div>{{users[0].dates[-1]}}</div></th>
+        </tr>
+        {% for user in users %}
+        <tr class="row">
+            <td>{{user.full_name}}</td>
+            <td>{{user.matric_number}}</td>
+            <td>{{user.department}}</td>
+            <td>{{user.level}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html> 
